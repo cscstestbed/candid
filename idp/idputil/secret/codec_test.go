@@ -12,7 +12,7 @@ import (
 	"gopkg.in/errgo.v1"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 
-	"github.com/canonical/candid/idp/idputil/secret"
+	"github.com/cscstestbed/candid/idp/idputil/secret"
 )
 
 var testKey = bakery.MustGenerateKey()

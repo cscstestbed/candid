@@ -20,10 +20,10 @@ import (
 	"gopkg.in/httprequest.v1"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/candidclient/ussologin"
-	"github.com/canonical/candid/idp"
-	"github.com/canonical/candid/idp/idputil"
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/candidclient/ussologin"
+	"github.com/cscstestbed/candid/idp"
+	"github.com/cscstestbed/candid/idp/idputil"
+	"github.com/cscstestbed/candid/store"
 )
 
 func init() {

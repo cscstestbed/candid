@@ -16,10 +16,10 @@ import (
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 	"gopkg.in/macaroon-bakery.v2/httpbakery/form"
 
-	"github.com/canonical/candid/idp"
-	"github.com/canonical/candid/idp/idputil"
-	"github.com/canonical/candid/idp/keystone/internal/keystone"
-	"github.com/canonical/candid/params"
+	"github.com/cscstestbed/candid/idp"
+	"github.com/cscstestbed/candid/idp/idputil"
+	"github.com/cscstestbed/candid/idp/keystone/internal/keystone"
+	"github.com/cscstestbed/candid/params"
 )
 
 func init() {

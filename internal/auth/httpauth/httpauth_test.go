@@ -17,10 +17,10 @@ import (
 	"gopkg.in/macaroon-bakery.v2/bakery/identchecker"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/internal/auth"
-	"github.com/canonical/candid/internal/auth/httpauth"
-	"github.com/canonical/candid/internal/candidtest"
-	"github.com/canonical/candid/params"
+	"github.com/cscstestbed/candid/internal/auth"
+	"github.com/cscstestbed/candid/internal/auth/httpauth"
+	"github.com/cscstestbed/candid/internal/candidtest"
+	"github.com/cscstestbed/candid/params"
 )
 
 type authSuite struct {

@@ -10,8 +10,8 @@ import (
 	errgo "gopkg.in/errgo.v1"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/meeting"
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/meeting"
+	"github.com/cscstestbed/candid/store"
 )
 
 type dischargeRequestInfo struct {

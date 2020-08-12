@@ -15,7 +15,7 @@ import (
 	"gopkg.in/httprequest.v1"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/candidclient/ussologin"
+	"github.com/cscstestbed/candid/candidclient/ussologin"
 )
 
 func TestKind(t *testing.T) {

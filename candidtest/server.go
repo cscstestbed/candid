@@ -24,8 +24,8 @@ import (
 	"gopkg.in/macaroon-bakery.v2/httpbakery/agent"
 	macaroon "gopkg.in/macaroon.v2"
 
-	"github.com/canonical/candid/candidclient"
-	"github.com/canonical/candid/params"
+	"github.com/cscstestbed/candid/candidclient"
+	"github.com/cscstestbed/candid/params"
 )
 
 // GroupListGroup is the group that users must belong to in order to

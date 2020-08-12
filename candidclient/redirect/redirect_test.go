@@ -12,8 +12,8 @@ import (
 	errgo "gopkg.in/errgo.v1"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/candidclient/redirect"
-	"github.com/canonical/candid/params"
+	"github.com/cscstestbed/candid/candidclient/redirect"
+	"github.com/cscstestbed/candid/params"
 )
 
 func TestRedirectURL(t *testing.T) {

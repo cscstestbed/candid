@@ -24,16 +24,16 @@ import (
 	"gopkg.in/httprequest.v1"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/idp"
-	"github.com/canonical/candid/idp/static"
-	"github.com/canonical/candid/internal/auth"
-	"github.com/canonical/candid/internal/candidtest"
-	"github.com/canonical/candid/internal/debug"
-	"github.com/canonical/candid/internal/discharger"
-	"github.com/canonical/candid/internal/identity"
-	"github.com/canonical/candid/internal/v1"
-	"github.com/canonical/candid/params"
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/idp"
+	"github.com/cscstestbed/candid/idp/static"
+	"github.com/cscstestbed/candid/internal/auth"
+	"github.com/cscstestbed/candid/internal/candidtest"
+	"github.com/cscstestbed/candid/internal/debug"
+	"github.com/cscstestbed/candid/internal/discharger"
+	"github.com/cscstestbed/candid/internal/identity"
+	"github.com/cscstestbed/candid/internal/v1"
+	"github.com/cscstestbed/candid/params"
+	"github.com/cscstestbed/candid/store"
 )
 
 func TestServer(t *testing.T) {

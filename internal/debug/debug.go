@@ -12,8 +12,8 @@ import (
 	"gopkg.in/httprequest.v1"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 
-	"github.com/canonical/candid/internal/identity"
-	"github.com/canonical/candid/version"
+	"github.com/cscstestbed/candid/internal/identity"
+	"github.com/cscstestbed/candid/version"
 )
 
 var logger = loggo.GetLogger("candid.internal.debug")

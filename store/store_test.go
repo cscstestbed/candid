@@ -8,7 +8,7 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/store"
 )
 
 func TestProviderIdentity(t *testing.T) {

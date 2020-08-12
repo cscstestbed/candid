@@ -19,8 +19,8 @@ import (
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 	"gopkg.in/macaroon.v2"
 
-	"github.com/canonical/candid/candidclient/ussodischarge"
-	"github.com/canonical/candid/params"
+	"github.com/cscstestbed/candid/candidclient/ussodischarge"
+	"github.com/cscstestbed/candid/params"
 )
 
 var _ httpbakery.Interactor = (*ussodischarge.Interactor)(nil)

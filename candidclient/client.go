@@ -16,7 +16,7 @@ import (
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 	"gopkg.in/macaroon-bakery.v2/httpbakery/agent"
 
-	"github.com/canonical/candid/params"
+	"github.com/cscstestbed/candid/params"
 )
 
 // Note: tests for this code are in the server implementation.

@@ -9,8 +9,8 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"github.com/canonical/candid/candidclient"
-	"github.com/canonical/candid/candidtest"
+	"github.com/cscstestbed/candid/candidclient"
+	"github.com/cscstestbed/candid/candidtest"
 )
 
 func TestPermChecker(t *testing.T) {

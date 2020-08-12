@@ -14,9 +14,9 @@ import (
 	"github.com/juju/simplekv"
 	errgo "gopkg.in/errgo.v1"
 
-	"github.com/canonical/candid/internal/candidtest"
-	"github.com/canonical/candid/internal/discharger/internal"
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/internal/candidtest"
+	"github.com/cscstestbed/candid/internal/discharger/internal"
+	"github.com/cscstestbed/candid/store"
 )
 
 func TestStore(t *testing.T) {

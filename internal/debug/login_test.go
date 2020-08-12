@@ -19,8 +19,8 @@ import (
 	"gopkg.in/errgo.v1"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 
-	"github.com/canonical/candid/internal/candidtest"
-	"github.com/canonical/candid/internal/debug"
+	"github.com/cscstestbed/candid/internal/candidtest"
+	"github.com/cscstestbed/candid/internal/debug"
 )
 
 func TestLogin(t *testing.T) {

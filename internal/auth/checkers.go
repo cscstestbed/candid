@@ -13,8 +13,8 @@ import (
 	"gopkg.in/macaroon-bakery.v2/bakery/checkers"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/params"
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/params"
+	"github.com/cscstestbed/candid/store"
 )
 
 const (

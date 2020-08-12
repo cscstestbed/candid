@@ -13,10 +13,10 @@ import (
 	"github.com/juju/simplekv/memsimplekv"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 
-	"github.com/canonical/candid/internal/identity"
-	"github.com/canonical/candid/meeting"
-	"github.com/canonical/candid/store"
-	"github.com/canonical/candid/store/memstore"
+	"github.com/cscstestbed/candid/internal/identity"
+	"github.com/cscstestbed/candid/meeting"
+	"github.com/cscstestbed/candid/store"
+	"github.com/cscstestbed/candid/store/memstore"
 )
 
 // Store implements a test fixture that contains memory-based

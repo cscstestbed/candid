@@ -20,10 +20,10 @@ import (
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 	macaroon "gopkg.in/macaroon.v2"
 
-	"github.com/canonical/candid/candidclient"
-	"github.com/canonical/candid/internal/auth"
-	"github.com/canonical/candid/params"
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/candidclient"
+	"github.com/cscstestbed/candid/internal/auth"
+	"github.com/cscstestbed/candid/params"
+	"github.com/cscstestbed/candid/store"
 )
 
 var blacklistUsernames = map[params.Username]bool{

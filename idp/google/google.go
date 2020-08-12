@@ -8,8 +8,8 @@ import (
 	oidc "github.com/coreos/go-oidc"
 	"gopkg.in/errgo.v1"
 
-	"github.com/canonical/candid/idp"
-	"github.com/canonical/candid/idp/openid"
+	"github.com/cscstestbed/candid/idp"
+	"github.com/cscstestbed/candid/idp/openid"
 )
 
 func init() {

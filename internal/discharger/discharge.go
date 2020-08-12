@@ -23,13 +23,13 @@ import (
 	"gopkg.in/macaroon-bakery.v2/httpbakery/agent"
 	"gopkg.in/macaroon.v2"
 
-	"github.com/canonical/candid/candidclient"
-	"github.com/canonical/candid/candidclient/redirect"
-	"github.com/canonical/candid/internal/auth"
-	"github.com/canonical/candid/internal/auth/httpauth"
-	"github.com/canonical/candid/internal/identity"
-	"github.com/canonical/candid/params"
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/candidclient"
+	"github.com/cscstestbed/candid/candidclient/redirect"
+	"github.com/cscstestbed/candid/internal/auth"
+	"github.com/cscstestbed/candid/internal/auth/httpauth"
+	"github.com/cscstestbed/candid/internal/identity"
+	"github.com/cscstestbed/candid/params"
+	"github.com/cscstestbed/candid/store"
 )
 
 // thirdPartyCaveatChecker implements an

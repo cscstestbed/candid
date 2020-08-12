@@ -14,12 +14,12 @@ import (
 	"gopkg.in/httprequest.v1"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/idp/idputil/secret"
-	"github.com/canonical/candid/internal/auth/httpauth"
-	"github.com/canonical/candid/internal/discharger/internal"
-	"github.com/canonical/candid/internal/identity"
-	"github.com/canonical/candid/internal/monitoring"
-	"github.com/canonical/candid/params"
+	"github.com/cscstestbed/candid/idp/idputil/secret"
+	"github.com/cscstestbed/candid/internal/auth/httpauth"
+	"github.com/cscstestbed/candid/internal/discharger/internal"
+	"github.com/cscstestbed/candid/internal/identity"
+	"github.com/cscstestbed/candid/internal/monitoring"
+	"github.com/cscstestbed/candid/params"
 )
 
 var logger = loggo.GetLogger("candid.internal.discharger")

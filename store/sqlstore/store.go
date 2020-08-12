@@ -11,7 +11,7 @@ import (
 	errgo "gopkg.in/errgo.v1"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/store"
 )
 
 var logger = loggo.GetLogger("candid.sqlstore")

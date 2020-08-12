@@ -13,7 +13,7 @@ import (
 	httprequest "gopkg.in/httprequest.v1"
 	"gopkg.in/macaroon-bakery.v2/httpbakery"
 
-	"github.com/canonical/candid/params"
+	"github.com/cscstestbed/candid/params"
 )
 
 const Kind = "browser-redirect"

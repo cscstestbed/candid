@@ -10,8 +10,8 @@ import (
 	qt "github.com/frankban/quicktest"
 	"github.com/frankban/quicktest/qtsuite"
 
-	"github.com/canonical/candid/candidtest"
-	"github.com/canonical/candid/store"
+	"github.com/cscstestbed/candid/candidtest"
+	"github.com/cscstestbed/candid/store"
 )
 
 type removeGroupSuite struct {

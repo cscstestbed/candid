@@ -9,7 +9,7 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"github.com/canonical/candid/candidclient/ussodischarge"
+	"github.com/cscstestbed/candid/candidclient/ussodischarge"
 )
 
 func TestUnmarshalUSSOMacaroon(t *testing.T) {
