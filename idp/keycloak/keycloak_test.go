@@ -1,3 +1,4 @@
+// Copyright 2020 Mark Klein <mdklein@gmail.com>
 // Copyright 2017 Canonical Ltd.
 // Licensed under the AGPLv3, see LICENCE file for details.
 
@@ -13,48 +14,45 @@ import (
 )
 
 var configTests = []struct {
-	about				string
-	yaml				string
+	about       string
+	yaml        string
 	expectError string
 }{{
 	about: "good config",
 	yaml: `
 identity-providers:
  - type: keycloak 
-	 client-id: client-001
-	 client-secret: secret-001
-	 keycloak-realm: https://example.com/auth/realms/example
-	 domain: example
+   client-id: client-001
+   client-secret: secret-001
+   keycloak-realm: https://example.com/auth/realms/example
+`,
+}, {
+  about: "another good config",
+  yaml: `
+identity-providers:
+ - type: keycloak 
+   client-id: client-001
+   keycloak-realm: https://example.com/auth/realms/example
 `,
 }, {
 	about: "no client-id",
 	yaml: `
 identity-providers:
  - type: keycloak 
-	 client-secret: secret-001
-	 keycloak-realm: https://example.com/auth/realms/example
+   client-secret: secret-001
+   keycloak-realm: https://example.com/auth/realms/example
 `,
 	expectError: `cannot unmarshal keycloak configuration: client-id not specified`,
 }, {
-	about: "no client-secret",
-	yaml: `
-identity-providers:
- - type: keycloak 
-	 client-id: client-001
-	 keycloak-realm: https://example.com/auth/realms/example
-`,
-	expectError: `cannot unmarshal keycloak configuration: client-secret not specified`,
-},{
 	about: "no keycloak-realm",
 	yaml: `
 identity-providers:
  - type: keycloak
-	 client-id: client-001
-	 client-secret: secret-001
+   client-id: client-001
+   client-secret: secret-001
 `,
 	expectError: `cannot unmarshal keycloak configuration: keycloak-realm not specified`,
-}
-}
+}}
 
 func TestConfig(t *testing.T) {
 	c := qt.New(t)

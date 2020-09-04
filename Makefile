@@ -50,6 +50,8 @@ candid_$(GIT_VERSION)_$(ARCH).snap:
 
 RELEASE_BINARY_PACKAGES=./cmd/candidsrv
 
+snap: candid_$(GIT_VERSION)_$(ARCH).snap
+
 .PHONY: deploy
 deploy: candid_$(GIT_VERSION)_$(ARCH).snap
 	$(MAKE) -C charm build

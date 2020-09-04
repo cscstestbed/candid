@@ -1,3 +1,4 @@
+// Copyright 2020 Mark Klein <mdklein@gmail.com>
 // Copyright 2017 Canonical Ltd.
 // Licensed under the AGPLv3, see LICENCE file for details.
 
@@ -12,6 +13,11 @@ import (
 	"github.com/cscstestbed/candid/idp/openid"
 )
 
+const (
+	DefaultProviderName = "keycloak"
+	DefaultProviderDomain = "KEYCLOAK"
+)
+
 func init() {
 	idp.Register("keycloak", func(unmarshal func(interface{}) error) (idp.IdentityProvider, error) {
 		var p Params
@@ -21,9 +27,6 @@ func init() {
 		if p.ClientID == "" {
 			return nil, errgo.Newf("client-id not specified")
 		}
-		if p.ClientSecret == "" {
-			return nil, errgo.Newf("client-secret not specified")
-		}
 		if p.KeycloakRealm == "" {
 			return nil, errgo.Newf("keycloak-realm not specified")
 		}
@@ -31,6 +34,7 @@ func init() {
 	})
 }
 
+// Params is a struct containing the configuration data to register a keycloak identity Provider
 type Params struct {
 	// Name is the name that will be given to the identity provider.
 	Name string `yaml:"name"`
@@ -47,11 +51,11 @@ type Params struct {
 	Domain string `yaml:"domain"`
 
 	// ClientID contains the Application Id for the application
-	// registered at
+	// registered
 	ClientID string `yaml:"client-id"`
 
-	// ClientSecret contains a password type Application Secret for
-	// the application as generated on
+	// Optional: ClientSecret contains a password type Application Secret
+	// for the application generated
 	ClientSecret string `yaml:"client-secret"`
 
 	// KeycloakReam contains the URI for the keycloak server
@@ -66,11 +70,12 @@ type Params struct {
 // NewIdentityProvider creates a keycloak identity provider with the
 // configuration defined by p.
 func NewIdentityProvider(p Params) idp.IdentityProvider {
+
 	if p.Name == "" {
-		p.Name = "keycloak"
+		p.Name = DefaultProviderName
 	}
 	if p.Domain == "" {
-		p.Domain = "KEYCLOAK"
+		p.Domain = DefaultProviderDomain
 	}
 	return openid.NewOpenIDConnectIdentityProvider(openid.OpenIDConnectParams{
 		Name:         p.Name,
